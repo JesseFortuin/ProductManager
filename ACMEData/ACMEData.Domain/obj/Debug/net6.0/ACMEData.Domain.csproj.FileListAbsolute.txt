@@ -1,0 +1,12 @@
+D:\Dev\Lessons\Angular Getting Started\ACMEData\ACMEData.Domain\bin\Debug\net6.0\ACMEData.Domain.deps.json
+D:\Dev\Lessons\Angular Getting Started\ACMEData\ACMEData.Domain\bin\Debug\net6.0\ACMEData.Domain.dll
+D:\Dev\Lessons\Angular Getting Started\ACMEData\ACMEData.Domain\bin\Debug\net6.0\ACMEData.Domain.pdb
+D:\Dev\Lessons\Angular Getting Started\ACMEData\ACMEData.Domain\obj\Debug\net6.0\ACMEData.Domain.csproj.AssemblyReference.cache
+D:\Dev\Lessons\Angular Getting Started\ACMEData\ACMEData.Domain\obj\Debug\net6.0\ACMEData.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\Lessons\Angular Getting Started\ACMEData\ACMEData.Domain\obj\Debug\net6.0\ACMEData.Domain.AssemblyInfoInputs.cache
+D:\Dev\Lessons\Angular Getting Started\ACMEData\ACMEData.Domain\obj\Debug\net6.0\ACMEData.Domain.AssemblyInfo.cs
+D:\Dev\Lessons\Angular Getting Started\ACMEData\ACMEData.Domain\obj\Debug\net6.0\ACMEData.Domain.csproj.CoreCompileInputs.cache
+D:\Dev\Lessons\Angular Getting Started\ACMEData\ACMEData.Domain\obj\Debug\net6.0\ACMEData.Domain.dll
+D:\Dev\Lessons\Angular Getting Started\ACMEData\ACMEData.Domain\obj\Debug\net6.0\refint\ACMEData.Domain.dll
+D:\Dev\Lessons\Angular Getting Started\ACMEData\ACMEData.Domain\obj\Debug\net6.0\ACMEData.Domain.pdb
+D:\Dev\Lessons\Angular Getting Started\ACMEData\ACMEData.Domain\obj\Debug\net6.0\ref\ACMEData.Domain.dll

@@ -7,7 +7,9 @@ import { Observable, catchError, tap, throwError, map } from "rxjs";
   providedIn: 'root'
 })
 export class ProductService{
-private productUrl = 'api/products/products.json';
+// private productUrl = 'api/products/products.json';
+
+private productUrl = 'https://localhost:7143/api/products';
 
   constructor(private http: HttpClient) {}
 
@@ -17,7 +19,7 @@ private productUrl = 'api/products/products.json';
       catchError(this.handleError)
     );
   }
-  
+
   getProduct(id: number): Observable<IProduct | undefined> {
     return this.getProducts()
       .pipe(

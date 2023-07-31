@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cVtT2mp71qoSvaeonoLUCimcDmhBb1PbNo32ghXOUHM=",
+  "Source": "Acme.Api",
+  "BasePath": "_content/Acme.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
