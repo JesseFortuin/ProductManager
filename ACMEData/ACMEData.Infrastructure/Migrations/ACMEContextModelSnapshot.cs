@@ -33,8 +33,8 @@ namespace ACMEData.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Price")
-                        .HasColumnType("int");
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
                     b.Property<string>("ProductCode")
                         .IsRequired()
@@ -54,6 +54,58 @@ namespace ACMEData.Infrastructure.Migrations
                     b.HasKey("ProductId");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductId = 1,
+                            Description = "Leaf rake with 48-inch wooden handle.",
+                            Price = 19.949999999999999,
+                            ProductCode = "GDN-0011",
+                            ProductName = "Leaf Rake",
+                            ReleaseData = "March 19, 2021",
+                            StarRating = 3.2000000000000002
+                        },
+                        new
+                        {
+                            ProductId = 2,
+                            Description = "15 gallon capacity rolling garden cart",
+                            Price = 32.990000000000002,
+                            ProductCode = "GDN-0023",
+                            ProductName = "Garden Cart",
+                            ReleaseData = "March 18, 2021",
+                            StarRating = 4.2000000000000002
+                        },
+                        new
+                        {
+                            ProductId = 5,
+                            Description = "Curved claw steel hammer",
+                            Price = 8.9000000000000004,
+                            ProductCode = "TBX-0048",
+                            ProductName = "Hammer",
+                            ReleaseData = "May 21, 2021",
+                            StarRating = 4.7999999999999998
+                        },
+                        new
+                        {
+                            ProductId = 8,
+                            Description = "15-inch steel blade hand saw",
+                            Price = 11.550000000000001,
+                            ProductCode = "TBX-0022",
+                            ProductName = "Saw",
+                            ReleaseData = "May 15, 2021",
+                            StarRating = 3.7000000000000002
+                        },
+                        new
+                        {
+                            ProductId = 10,
+                            Description = "Standard two-button video game controller",
+                            Price = 35.950000000000003,
+                            ProductCode = "GMG-0042",
+                            ProductName = "Video Game Controller",
+                            ReleaseData = "October 15, 2020",
+                            StarRating = 4.5999999999999996
+                        });
                 });
 #pragma warning restore 612, 618
         }

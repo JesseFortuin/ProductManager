@@ -15,15 +15,19 @@ builder.Services.AddScoped<IProductFacade, ProductFacade>();
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
+builder.Services.AddScoped<IFileService, FileService>();
+
 builder.Services.AddDbContext<ACMEContext>(DBContextOptions => 
 DBContextOptions.UseSqlServer(builder.Configuration.GetConnectionString("ProductConnection")));
 
-builder.Services.AddCors(p => p.AddPolicy("corspolicy", build =>
+builder.Services.AddCors(p => 
 {
-    build.WithOrigins("http://localhost:4200")
-    .AllowAnyMethod()
-    .AllowAnyHeader();
-}));
+    p.AddDefaultPolicy(
+        policy =>
+        {
+            policy.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod();
+        });
+});
 
 var app = builder.Build();
 
@@ -34,9 +38,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseStaticFiles();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCors();
 
 app.MapControllers();
 

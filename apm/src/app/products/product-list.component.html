@@ -52,6 +52,9 @@
             <td><pm-star [rating]="product.starRating"
               (ratingClicked)="onRatingClicked($event)"></pm-star></td>
           </tr>
+          <tr><button id="excel_button"
+            class="btn btn-primary"
+            (click)="getExcel()">Get Excel</button></tr>
         </tbody>
       </table>
 

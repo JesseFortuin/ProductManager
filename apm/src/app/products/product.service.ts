@@ -11,6 +11,8 @@ export class ProductService{
 
 private productUrl = 'https://localhost:7143/api/products';
 
+private xlUrl = 'https://localhost:7143/api/excel';
+
   constructor(private http: HttpClient) {}
 
   getProducts(): Observable<IProduct[]> {
@@ -18,6 +20,11 @@ private productUrl = 'https://localhost:7143/api/products';
       tap(data => console.log('All', JSON.stringify(data))),
       catchError(this.handleError)
     );
+  }
+
+  public getExcel() {
+    return this.http.get(this.xlUrl,
+      {observe: 'response', responseType: 'blob'})
   }
 
   getProduct(id: number): Observable<IProduct | undefined> {

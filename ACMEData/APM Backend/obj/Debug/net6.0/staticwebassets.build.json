@@ -1,11 +1,54 @@
 {
   "Version": 1,
-  "Hash": "cVtT2mp71qoSvaeonoLUCimcDmhBb1PbNo32ghXOUHM=",
+  "Hash": "cYjp3nOuOVczjksGIP2sVE1jls44vlaSmJ+QxccFxUA=",
   "Source": "Acme.Api",
   "BasePath": "_content/Acme.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Acme.Api\\wwwroot",
+      "Source": "Acme.Api",
+      "ContentRoot": "D:\\Dev\\Lessons\\Angular Getting Started\\ACMEData\\APM Backend\\wwwroot\\",
+      "BasePath": "_content/Acme.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Dev\\Lessons\\Angular Getting Started\\ACMEData\\APM Backend\\wwwroot\\Images\\thr-003.png",
+      "SourceId": "Acme.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\Lessons\\Angular Getting Started\\ACMEData\\APM Backend\\wwwroot\\",
+      "BasePath": "_content/Acme.Api",
+      "RelativePath": "Images/thr-003.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\thr-003.png"
+    },
+    {
+      "Identity": "D:\\Dev\\Lessons\\Angular Getting Started\\ACMEData\\APM Backend\\wwwroot\\Images\\TRY-0404.png",
+      "SourceId": "Acme.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\Lessons\\Angular Getting Started\\ACMEData\\APM Backend\\wwwroot\\",
+      "BasePath": "_content/Acme.Api",
+      "RelativePath": "Images/TRY-0404.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\TRY-0404.png"
+    }
+  ]
 }

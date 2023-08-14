@@ -93,3 +93,11 @@ D:\Dev\Lessons\Angular Getting Started\ACMEData\APM Backend\obj\Debug\net6.0\ref
 D:\Dev\Lessons\Angular Getting Started\ACMEData\APM Backend\obj\Debug\net6.0\Acme.Api.pdb
 D:\Dev\Lessons\Angular Getting Started\ACMEData\APM Backend\obj\Debug\net6.0\Acme.Api.genruntimeconfig.cache
 D:\Dev\Lessons\Angular Getting Started\ACMEData\APM Backend\obj\Debug\net6.0\ref\Acme.Api.dll
+D:\Dev\Lessons\Angular Getting Started\ACMEData\APM Backend\bin\Debug\net6.0\Acme.Api.staticwebassets.runtime.json
+D:\Dev\Lessons\Angular Getting Started\ACMEData\APM Backend\bin\Debug\net6.0\ClosedXML.dll
+D:\Dev\Lessons\Angular Getting Started\ACMEData\APM Backend\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+D:\Dev\Lessons\Angular Getting Started\ACMEData\APM Backend\bin\Debug\net6.0\ExcelNumberFormat.dll
+D:\Dev\Lessons\Angular Getting Started\ACMEData\APM Backend\bin\Debug\net6.0\Irony.dll
+D:\Dev\Lessons\Angular Getting Started\ACMEData\APM Backend\bin\Debug\net6.0\SixLabors.Fonts.dll
+D:\Dev\Lessons\Angular Getting Started\ACMEData\APM Backend\bin\Debug\net6.0\System.IO.Packaging.dll
+D:\Dev\Lessons\Angular Getting Started\ACMEData\APM Backend\bin\Debug\net6.0\XLParser.dll

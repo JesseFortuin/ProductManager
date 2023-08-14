@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ACMEData.Domain
 {
@@ -15,7 +17,7 @@ namespace ACMEData.Domain
 
         public string Description { get; set; }
 
-        public int Price { get; set; }
+        public double Price { get; set; }
 
         public double StarRating { get; set; }
     }
