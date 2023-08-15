@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>APM_Backend</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Images\GDN-0011.png" />
+    <Content Remove="wwwroot\Images\GDN-0023.png" />
+    <Content Remove="wwwroot\Images\GMG-0042.png" />
+    <Content Remove="wwwroot\Images\TBX-0022.png" />
+    <Content Remove="wwwroot\Images\TBX-0048.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.102.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ACMEData.Application\ACMEData.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\GDN-0011.png" />
+    <None Include="wwwroot\Images\GDN-0023.png" />
+    <None Include="wwwroot\Images\GMG-0042.png" />
+    <None Include="wwwroot\Images\TBX-0022.png" />
+    <None Include="wwwroot\Images\TBX-0048.png" />
+  </ItemGroup>
+
+</Project>

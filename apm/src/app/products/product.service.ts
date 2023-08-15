@@ -7,7 +7,11 @@ import { Observable, catchError, tap, throwError, map } from "rxjs";
   providedIn: 'root'
 })
 export class ProductService{
-private productUrl = 'api/products/products.json';
+// private productUrl = 'api/products/products.json';
+
+private productUrl = 'https://localhost:7143/api/products';
+
+private xlUrl = 'https://localhost:7143/api/excel';
 
   constructor(private http: HttpClient) {}
 
@@ -17,7 +21,12 @@ private productUrl = 'api/products/products.json';
       catchError(this.handleError)
     );
   }
-  
+
+  public getExcel() {
+    return this.http.get(this.xlUrl,
+      {observe: 'response', responseType: 'blob'})
+  }
+
   getProduct(id: number): Observable<IProduct | undefined> {
     return this.getProducts()
       .pipe(

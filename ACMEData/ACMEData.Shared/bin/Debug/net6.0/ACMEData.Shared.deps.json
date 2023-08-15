@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ACMEData.Shared/1.0.0": {
+        "runtime": {
+          "ACMEData.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ACMEData.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from "@angular/core";
 import { Subscription } from 'rxjs'
 import { IProduct } from "./product";
 import { ProductService } from "./product.service";
+import { TagContentType } from "@angular/compiler";
 
 @Component({
 templateUrl: './product-list.component.html',
@@ -29,6 +30,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
 
   filteredProducts: IProduct[] = [];
   products: IProduct[] = [];
+  productsControl: IProduct [] = [];
 
   constructor(private productService: ProductService) {}
 
@@ -47,9 +49,25 @@ export class ProductListComponent implements OnInit, OnDestroy {
       next: products => {
         this.products = products;
         this.filteredProducts = this.products;
+        this.productsControl = products;
       },
       error: err => this.errorMessage = err
     });
+  }
+
+  blob(): void {
+    for (let product of this.productsControl){
+      const byteCharacters = atob(product.imageUrl);
+      const byteNumbers = new Array(byteCharacters.length)
+      for (let i = 0; i < byteCharacters.length; i++){
+        byteNumbers[i] = byteCharacters.charCodeAt(i);
+      }
+
+      const byteArray = new Uint8Array(byteNumbers)
+
+      const blob = new Blob([byteArray], {type: 'image/png'})
+      // product.imageUrl = byteNumbers;
+    }
   }
 
   ngOnDestroy(): void {
@@ -58,5 +76,22 @@ export class ProductListComponent implements OnInit, OnDestroy {
 
   onRatingClicked(message : string): void {
     this.pageTitle = 'Product List: ' + message;
+  }
+  getExcel(): void {
+    this.productService.getExcel()
+    .subscribe(response =>
+      {
+        let fileName = response.headers.get('content-disposition')
+        ?.split(';')[1].split('=')[1];
+
+        let blob: Blob = response.body as Blob;
+
+        let a = document.createElement('a');
+        // a.download = fileName;
+
+        a.href = window.URL.createObjectURL(blob);
+
+        a.click();
+      });
   }
 }
